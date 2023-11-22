@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Macieul's Coffee</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="ui grid container" id="menu">
+
+          
+
+            <div class="four wide column right">
+                <a href="index.html">
+                <button class="ui brown button right floated ">
+                Usuários 
+                </button>
+                </a>
+
+            </div>
+        </div>
+       
+    </header>
+    <main>
+<div class="ui container">
+      
+        <div class="four wide column right">
+            <button class="ui green button right floated " id="btn-adicionar-bolos">
+            Adicionar 
+            </button>
+            </a>
+
+        </div>
+        <div class="Bolos">
+            <h1>Bolos</h1>
+            <table class="ui celled table">
+                        <thead>
+                         <tr class="four wide"></tr><th>Nome</th>
+                         <th class="four wide">Preço</th>
+                         <th class="four wide">Editar/Excluir</th>
+                        </tr class="four wide"></thead>
+                        <tbody id="ListarBolo">
+                        
+                        </tbody>
+                      </table>
+
+        </div>
+
+
+                      <div class="Cafe">
+                        <div class="four wide column right">
+                            <button class="ui green button right floated " id="btn-adicionar-cafes">
+                            Adicionar 
+                            </button>
+                            </a>
+                
+                        </div>
+                            <h1>Cafés</h1>
+                            <table class="ui celled table">
+                                <thead>
+                                    <tr class="four wide"><th>Nome</th>
+                                    <th class="four wide">Preço</th>
+                                    <th class="four wide">Editar/Excluir</th>
+                                   </tr class="four wide"></thead>
+                                   <tbody id="ListarCafe">
+
+                                   
+                                   </tbody>
+                                 </table>
+           
+                             </div>
+              
+                
+</div>
+                            </main>
+
+                      <div class="ui modal">
+                        <i class="close icon"></i>
+                        <div class="header">
+                          Adicionar Produto
+                        </div>
+
+                        <div class="content">
+                            <div class="ui form">
+                                <div class="field">
+                                    <label>Produto</label>
+                                    <input type="text" name="nome" pattern="\d*" placeholder="Digite o nome do produto" min="1"
+                                        id="nome">
+                                        <label>Preço</label>
+                                        <input type="number" name="preco" pattern="\d*" placeholder="Digite o preço do produto" min="1"
+                                            id="preco">
+
+                                            <label>Descrição</label>
+                                            <input type="text" name="descricao" pattern="\d*" placeholder="Digite o a descricao do produto" min="1"
+                                                id="descricao">     
+
+                                            <label>Link da Foto</label>
+                                            <input type="text" name="foto" pattern="\d*"  min="1"
+                                                id="foto">     
+
+                                                <label>Categoria</label>
+                                                <input type="number" name="idCategoria" pattern="\d*"  min="1 "
+                                                    id="idCategoria">     
+                                                  
+                                </div>
+                            
+                            </div>
+                            
+                            </div>
+                       
+
+                        <div class="actions">
+                            <div class="ui black deny button">
+                                Voltar
+                            </div>
+                            <div class="ui green right button" id="btn-realizar-pedido">
+                                Enviar<span id="valor-total"></span>
+                            </div>
+                        </div>
+                    
+
+                </div>
+           
+                
+                
+                
+
+   
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="js/admin.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+
+</html>
